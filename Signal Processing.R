@@ -1,7 +1,6 @@
 ############################################
 # Data analysis project (PIC Math) for the Nevada National Security Site.
 # Mentors: Dr. Sykes & Dr. Howard
-# Team #2: Asaph Camillo, Jake Morris, & Sebastian Bustillo
 # Ouachita Baptist University
 # 3-20-2020
 ################################################
@@ -37,7 +36,7 @@ rad_dose <-
 ####
 rad_dose <-  select(rad_dose, 1:2)
 rad_dose <- slice(rad_dose, 2:80)
-names(rad_dose)[names(rad_dose) == "ï..Shot.Number"] <- "Shot"
+names(rad_dose)[names(rad_dose) == "Ã¯..Shot.Number"] <- "Shot"
 names(rad_dose)[names(rad_dose) == "Dose.C1.Rads"] <- "Dose"
 ###
 # Get the radiaton doses for Cygnus 1 only.
