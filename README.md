@@ -8,4 +8,5 @@ I used this to perfrom exploratory data analysis by simply plotting two quantita
 
 ## Data_Smoothing
 With this file, I applied the Savitzky-Golay Smoothing filter to our data; this was very helpful at removing all the excess noise from the signal. Additionally, I used a cropping technique to only analyze where the signal leaves the baseline.
+![Smoothin](data/smoothinPlot1.jpg)
 
