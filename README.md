@@ -3,4 +3,4 @@ R scripts utilized for the analysis of flash x-ray  diagnostics data from the Ne
 
 ## Data_Plot
 I used this to perfrom exploratory data analysis by simply plotting two quantitative varaiables. Then, I created PDFs files for each plot as per PI's request. Below is an example of the visualized data.
-!(data/peakCropping1.jpg)
+!(R-Data-Analysis-Project/data/peakCropping1.jpg)
