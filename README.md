@@ -12,4 +12,4 @@ With this file, I applied the Savitzky-Golay Smoothing filter to our data; this 
 
 ## Signal Analysis
 Once determining what features of the data to look at and doing some data cleaning, here's where I performed most of the statistcal analyis pertaining to the data.
-![TimeSeries](data/)
+![TimeSeries](data/xraypinb_after_smoothing.jpeg)
