@@ -6,5 +6,6 @@ I used this to perfrom exploratory data analysis by simply plotting two quantita
 
 ![Plotting](data/peakCropping1.jpg)
 
-## Data Analysis
-With this file, I visualized the data in adifferent way in order to find a correlation between some of the simple statistical values calculated. 
+## Data_Smoothing
+With this file, I applied the Savitzky-Golay Smoothing filter to our data; this was very helpful at removing all the excess noise from the signal. Additionally, I used a cropping technique to only analyze where the signal leaves the baseline.
+
