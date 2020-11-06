@@ -10,50 +10,6 @@
   # 2-29-2020
   
   # Get the names of the different diagnostic types. (Ex. DRD1, IMRX, IPFL4SW, etc.)
-  ######################################################################################################################
-  setwd("C:\\Users\\Sebastian B\\Documents\\Spring 2020\\PIC\\Original Data\\Diagnostics\\PinM")
-
-  shot1652 <- "s@1652 PinM_569.txt"
-  shot1657 <- "s@1657 PinM_649.txt"
-  shot1661 <- "s@1661 PinM_705.txt"
-  shot1793 <- "s@1793 SCRP1@VDIVERT_2558.txt"
-  shot1799 <- "s@1799 SCRP1@VDIVERT_2642.txt"
-  
-  s1652 <- read.csv(shot1652, header = FALSE, sep = ",")
-  s1657 <- read.csv(shot1657, header = FALSE, sep = ",")
-  s1661 <- read.csv(shot1661, header = FALSE, sep = ",")
-  s1793 <- read.csv(shot1793, header = FALSE, sep = ",")
-  s1799 <- read.csv(shot1799, header = FALSE, sep = ",")
-  
-  plot(s1652$V1*(10^6), savgol(s1652$V2, 51), type = "l", col = "blue", xlab = expression(paste("Time ", "(", mu, "s)")), ylab = "Voltage", main = "VDIVERT", xlim = c(1.4, 2.2))
-  #lines(s1657$V1*(10^6), savgol(s1657$V2,51), type = "l", col = "red")
-  lines(s1661$V1*(10^6), savgol(s1661$V2,51), type = "l", col = "red")
-  #lines(s1793$V1*(10^6), savgol(s1793$V2,51), type = "l", col = "green")
-  lines(s1657$V1*(10^6), savgol(s1657$V2,51), type = "l", col = "black")
-  legend("topright" ,legend = c("1652",  "1661",  "1657"), col = c("blue", "red", "black"), cex = 0.8, lty = 1:1 )
-
-  
-  
-  # p = ggplot() + geom_line(data = s1652, aes(x = V1, y = V2), color = "blue") +
-  #   geom_line(data = s1657, aes(x = V1, y = V2), color = "green") + geom_line(data = s1661, aes(x = V1, y = V2), color = "red") +
-  #   geom_line(data = s1661, aes(x = V1, y = V2), color = "magenta")+ geom_line(data = s1793, aes(x = V1, y = V2), color = "purple") + 
-  #   geom_line(data = s1799, aes(x = V1, y = V2), color = "#f5429e") + theme_bw() + xlab('Time') + ylab('Voltage') +
-  #   title(main = "Vpipe 3") 
-  # 
-  # pdf("Rplot.pdf")
-  #  print(p)
-  #  dev.off()
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ########################################################################################################################
   folder_names <- list.files(path = "C:\\Users\\Sebastian B\\Documents\\Spring 2020\\PIC\\Original Data\\Diagnostics")
   
   # Iterate through all of the diagnostic IDs
